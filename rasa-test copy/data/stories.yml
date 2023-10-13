@@ -1,0 +1,62 @@
+version: "3.1"
+
+stories:
+  - story: Greet and Place an Order
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: place_order
+      - action: utter_place_order
+
+  - story: Check Menu and Thank You
+    steps:
+      - intent: check_menu
+      - action: utter_check_menu
+      - intent: thank_you
+      - action: utter_thank_you
+
+  - story: Ask for Specials and Say Goodbye
+    steps:
+      - intent: specials
+      - action: utter_specials
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Help Request, Apology, and Unkown Intent
+    steps:
+      - intent: help
+      - action: utter_help
+      - intent: apology
+      - action: utter_apology
+      - intent: unknown
+      - action: utter_unknown
+
+  - story: Order Confirmation and Address Inquiry
+    steps:
+      - intent: order_confirmation
+      - action: utter_order_confirmation
+      - intent: address
+      - action: utter_address
+
+  - story: Delivery Options, Opening Hours, and Payment Options
+    steps:
+      - intent: delivery_options
+      - action: utter_delivery_options
+      - intent: opening_hours
+      - action: utter_opening_hours
+      - intent: payment_options
+      - action: utter_payment_options
+
+  - story: Provide Feedback, Ask for Promotions, and Contact Information
+    steps:
+      - intent: feedback_request
+      - action: utter_feedback_request
+      - intent: promotions
+      - action: utter_promotions
+      - intent: contact_info
+      - action: utter_contact_info
+
+
+
+
+

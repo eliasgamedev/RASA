@@ -1,0 +1,81 @@
+version: "3.1"
+
+
+intents:
+  - greet
+  - place_order
+  - check_menu
+  - options
+  - thank_you
+  - goodbye
+  - apology
+  - unknown
+  - specials
+  - help
+  - order_confirmation
+  - delivery_options
+  - opening_hours
+  - payment_options
+  - feedback_request
+  - promotions
+  - address
+  - contact_info
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_place_order:
+    - text: "Sure, what type of [pizza](https://example.com/pizza-menu) would you like to order?"
+  
+  utter_check_menu:
+    - text: "Here's our [pizza menu](https://example.com/pizza-menu) for you to explore."
+
+  utter_options:
+    - text: "We have a variety of [pizza options](https://example.com/pizza-menu). What type of pizza are you in the mood for?"
+    
+  utter_thank_you:
+    - text: "Thank you for choosing us. Enjoy your pizza!"
+
+  utter_goodbye:
+    - text: "Goodbye! If you have any more questions, [feel free to ask](https://example.com/contact)."
+    
+  utter_apology:
+    - text: "I'm sorry for any inconvenience. How can I assist you further?"
+    
+  utter_unknown:
+    - text: "I didn't understand that. Could you please rephrase your request?"
+
+  utter_specials:
+    - text: "Don't forget to check our [special offers](https://example.com/specials) for today!"
+    
+  utter_help:
+    - text: "I'm here to help. What can I assist you with?"
+
+  utter_order_confirmation:
+    - text: "Your order has been confirmed. It will be ready in 30 minutes."
+
+  utter_delivery_options:
+    - text: "We offer both pickup and delivery options. Which one would you prefer?"
+
+  utter_opening_hours:
+    - text: "Our opening hours are from 11:00 AM to 9:00 PM, Monday to Sunday."
+
+  utter_payment_options:
+    - text: "We accept cash, credit card, and online payment methods."
+
+  utter_feedback_request:
+    - text: "We value your feedback. Please let us know how we can improve our service."
+
+  utter_promotions:
+    - text: "Check out our ongoing [promotions](https://example.com/promotions) for great discounts!"
+
+  utter_address:
+    - text: "Our address is 123 Main Street, Anytown, USA."
+
+  utter_contact_info:
+    - text: "You can reach us at [**(123) 456-7890**](tel:+1234567890) for any inquiries."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

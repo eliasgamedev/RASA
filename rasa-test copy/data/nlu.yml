@@ -1,0 +1,111 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi there
+    - Hey
+    - Good morning
+
+- intent: place_order
+  examples: |
+    - I'd like to place an order
+    - Can I order a pizza?
+    - How do I order a pizza?
+
+- intent: check_menu
+  examples: |
+    - What's on the menu?
+    - Show me the pizza options
+    - I want to see the menu
+
+- intent: options
+  examples: |
+    - Tell me my choices
+    - What kinds of pizza can I get?
+    - Show me the options
+
+- intent: thank_you
+  examples: |
+    - Thanks
+    - Thank you so much
+    - I appreciate it
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Farewell
+    - See you later
+
+- intent: apology
+  examples: |
+    - I'm sorry
+    - My apologies
+    - I didn't mean to
+
+- intent: unknown
+  examples: |
+    - I don't understand
+    - Can you clarify?
+    - What?
+
+- intent: specials
+  examples: |
+    - Any specials today?
+    - Special offers
+    - Deals?
+
+- intent: help
+  examples: |
+    - Help me
+    - Can you assist me?
+    - I need assistance
+
+- intent: order_confirmation
+  examples: |
+    - Confirm my order
+    - Is my order confirmed?
+    - Did you get my order?
+
+- intent: delivery_options
+  examples: |
+    - Do you deliver?
+    - How do I get my order?
+    - Can I choose delivery?
+
+- intent: opening_hours
+  examples: |
+    - When are you open?
+    - What are your hours?
+    - Hours of operation
+
+- intent: payment_options
+  examples: |
+    - Payment methods
+    - How can I pay?
+    - Credit card or cash?
+
+- intent: feedback_request
+  examples: |
+    - Provide feedback
+    - I want to give feedback
+    - Tell me about feedback
+
+- intent: promotions
+  examples: |
+    - What promotions do you have?
+    - Show me promotions
+    - Discounts?
+
+- intent: address
+  examples: |
+    - Your location
+    - Where are you located?
+    - Tell me your address
+
+- intent: contact_info
+  examples: |
+    - Contact details
+    - How can I contact you?
+    - What's your phone number?

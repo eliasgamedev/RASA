@@ -1,0 +1,82 @@
+version: "3.1"
+
+rules:
+  - rule: User asks for the menu
+    steps:
+      - intent: check_menu
+      - action: utter_check_menu
+
+  - rule: User wants to place an order
+    steps:
+      - intent: place_order
+      - action: utter_place_order
+
+  - rule: User thanks the bot
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+
+  - rule: User says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: User apologizes
+    steps:
+      - intent: apology
+      - action: utter_apology
+
+  - rule: Unkown intent, ask for clarification
+    steps:
+      - intent: unknown
+      - action: utter_unknown
+
+  - rule: User asks for specials
+    steps:
+      - intent: specials
+      - action: utter_specials
+
+  - rule: User asks for help
+    steps:
+      - intent: help
+      - action: utter_help
+
+  - rule: User wants order confirmation
+    steps:
+      - intent: order_confirmation
+      - action: utter_order_confirmation
+
+  - rule: User inquires about delivery options
+    steps:
+      - intent: delivery_options
+      - action: utter_delivery_options
+
+  - rule: User asks about opening hours
+    steps:
+      - intent: opening_hours
+      - action: utter_opening_hours
+
+  - rule: User asks about payment options
+    steps:
+      - intent: payment_options
+      - action: utter_payment_options
+
+  - rule: User wants to provide feedback
+    steps:
+      - intent: feedback_request
+      - action: utter_feedback_request
+
+  - rule: User asks about promotions
+    steps:
+      - intent: promotions
+      - action: utter_promotions
+
+  - rule: User asks for the address
+    steps:
+      - intent: address
+      - action: utter_address
+
+  - rule: User asks for contact information
+    steps:
+      - intent: contact_info
+      - action: utter_contact_info
